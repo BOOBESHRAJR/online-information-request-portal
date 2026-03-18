@@ -1,9 +1,9 @@
 <?php
 // Database Configuration
-$servername = "localhost";
-$username = "root";
-$password = "";
-$database = "online_request_portal";
+$host = getenv("DB_HOST");
+$user = getenv("DB_USER");
+$password = getenv("DB_PASS");
+$db = getenv("DB_NAME");
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $database);
